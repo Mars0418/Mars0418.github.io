@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://mars0418.github.io/sitemap.xml

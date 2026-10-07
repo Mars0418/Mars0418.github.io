@@ -1,3 +1,4 @@
-theme: jekyll-theme-minimal
-title: Zhenghan Zhu's homepage
-description: Welcome to my homepage and find more about my projects and ideas!
+title: Zhenghan Zhu | Tsinghua University
+description: Embodied intelligence and human–robot interaction.
+url: https://mars0418.github.io
+# This site serves committed static HTML; .nojekyll disables Jekyll processing.
