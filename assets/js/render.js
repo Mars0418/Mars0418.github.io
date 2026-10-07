@@ -72,6 +72,7 @@ function renderSidebar(lang) {
     <p class="affiliation">${t.role}<br>${t.college}, ${t.university}</p>
     <p class="location">${t.location}</p>
     <div class="profile-links">${iconLink('mailto:zhuzh24@mails.tsinghua.edu.cn', 'mail', 'Email: zhuzh24@mails.tsinghua.edu.cn', false)}${iconLink('https://github.com/Mars0418', 'github', 'GitHub')}${iconLink('https://scholar.google.com/citations?user=Pjnm7e4AAAAJ&hl=en', 'scholar', 'Google Scholar')}<a class="cv-button" href="assets/Zhenghan-Zhu-CV.pdf" title="${lang === 'en' ? 'Curriculum Vitae' : '个人简历'}" target="_blank" rel="noopener">${lang === 'en' ? 'CV' : '简历'}</a></div>
+    <p class="explore-label">${lang === 'en' ? 'EXPLORE' : '浏览栏目'}</p>
     <nav class="section-nav" aria-label="${lang === 'en' ? 'Sections' : '页面栏目'}">${ids.map((id, i) => `<a href="#${id}">${t.nav[i]}</a>`).join('')}</nav>`;
 }
 function renderMain(data, lang) {

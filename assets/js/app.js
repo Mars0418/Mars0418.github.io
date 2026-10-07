@@ -3,7 +3,7 @@
   const {renderMain, renderSidebar, text, ids} = window.SiteRenderer;
   const data = window.SiteData;
   let lang = 'en';
-  let observer;
+  let navigationFrame = 0;
   let trigger;
   const main = document.getElementById('main-content');
   const sidebar = document.getElementById('profile');
@@ -14,21 +14,25 @@
     set: value => { try { localStorage.setItem('zhenghan-language', value); } catch {} },
   };
   function observeSections() {
-    observer?.disconnect();
-    if (!('IntersectionObserver' in window)) return;
-    observer = new IntersectionObserver(entries => {
-      for (const entry of entries) {
-        if (!entry.isIntersecting) continue;
-        sidebar.querySelectorAll('.section-nav a').forEach(link => {
-          const selected = link.hash === '#' + entry.target.id;
-          link.classList.toggle('active', selected);
-          if (selected) link.setAttribute('aria-current', 'location');
-          else link.removeAttribute('aria-current');
-        });
-      }
-    }, {rootMargin: '-12% 0px -70% 0px', threshold: 0});
-    ids.forEach(id => observer.observe(document.getElementById(id)));
+    let active = ids[0];
+    const threshold = Math.min(150, window.innerHeight * 0.2);
+    for (const id of ids) {
+      if (document.getElementById(id).getBoundingClientRect().top <= threshold) active = id;
+    }
+    sidebar.querySelectorAll('.section-nav a').forEach(link => {
+      const selected = link.hash === '#' + active;
+      link.classList.toggle('active', selected);
+      if (selected) link.setAttribute('aria-current', 'location');
+      else link.removeAttribute('aria-current');
+    });
   }
+  window.addEventListener('scroll', () => {
+    if (navigationFrame) return;
+    navigationFrame = requestAnimationFrame(() => {
+      navigationFrame = 0;
+      observeSections();
+    });
+  }, {passive:true});
   function setLanguage(next, preserve = true) {
     if (!['en', 'zh'].includes(next)) return;
     const expanded = document.getElementById('news-toggle')?.getAttribute('aria-expanded') === 'true';

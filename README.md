@@ -11,6 +11,7 @@ About Me → News → Research → Projects → Education → Awards → Service
 - HEIR research figure with an enlarged preview, author contribution markers, Project and Dataset links.
 - Two course projects: robot-car control and Yanshee obstacle-course development.
 - Responsive layout and a static fallback for reduced motion.
+- A fixed left profile and section navigation, with only the main content moving during page scrolling. Compact windows keep the same two-column arrangement.
 
 ## Editing
 
