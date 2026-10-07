@@ -4,14 +4,15 @@ Bilingual academic homepage: **https://mars0418.github.io/**.
 
 ## Contents
 
-About Me → News → Research → Projects → Education → Awards → Service.
+About Me → News → Research → Selected Projects → Education → Awards → Service.
 
 - English / Chinese switch with a remembered preference.
 - Expandable News archive and selected coursework.
-- HEIR research figure with an enlarged preview, author contribution markers, Project and Dataset links.
+- HEIR research figure with an enlarged preview, author links, Project and Dataset links; a Cross-view 3D Gaze Target Estimation research entry.
 - Two course projects: robot-car control and Yanshee obstacle-course development.
 - Responsive layout and a static fallback for reduced motion.
 - A fixed left profile and section navigation, with only the main content moving during page scrolling. Compact windows keep the same two-column arrangement.
+- Typography reduced to 85% of the preceding layout; the compact sidebar shows every section without its own scrolling.
 
 ## Editing
 

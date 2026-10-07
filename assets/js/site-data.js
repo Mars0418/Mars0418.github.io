@@ -3,12 +3,12 @@ const siteData = {
     "zh": [
       "我是朱正涵，清华大学新雅书院 2024 级本科生，主修自动化。我的研究目标是让机器人真正实现与人的交互：理解人的意图，在真实环境中与人沟通、协作，并提供帮助。",
       "我的研究兴趣包括具身智能、人机交互、第一视角感知、机器人基础模型、柔性机器人和人形机器人。",
-      "学术之外，我喜欢与有趣的人交流，也热爱去各地旅行，两者都让我发现新的风景、生活方式和看待世界的角度。我经常在大型学生活动中担任主持人、表演者和学生代表发言人 🎤🎭。作为班长和学生社团负责人，我希望和伙伴们一起组织有意思的活动，让大家在大学生活中拥有更多连接。练习 Locking、长跑、游泳和篮球是我保持活力、调节生活节奏的方式。"
+      "学术之外，我喜欢与有趣的人交流，也热爱去各地旅行，两者都让我发现新的风景、生活方式和看待世界的角度。我经常在大型学生活动中担任主持人、表演者和组织者。作为班长和学生社团负责人，我希望和伙伴们一起组织有意思的活动，让大家在大学生活中拥有更多连接。练习 Locking、长跑、游泳和篮球是我保持活力、调节生活节奏的方式。"
     ],
     "en": [
       "I am Zhenghan Zhu, an undergraduate student at Xinya College, Tsinghua University, majoring in Automation. My research goal is to enable robots to truly interact with people: to understand human intent, communicate and collaborate in real-world environments, and provide meaningful assistance.",
       "My research interests include embodied intelligence, human–robot interaction, egocentric perception, robotic foundation models, soft robotics, and humanoid robotics.",
-      "Beyond academics and research, I enjoy talking with interesting people and traveling to different places—both introduce me to new scenery, ways of life, and perspectives. I have often appeared on stage as an event host, performer, and student speaker 🎤🎭 at major university events. As a class monitor and student-club leader, I hope to organize enjoyable activities with friends and help people build more connections in university life. Practicing Locking, distance running, swimming, and basketball keeps me active and helps me find balance."
+      "Beyond academics and research, I enjoy talking with interesting people and traveling to different places—both introduce me to new scenery, ways of life, and perspectives. I have often appeared as an event host, performer, and organizer at major university events. As a class monitor and student-club leader, I hope to organize enjoyable activities with friends and help people build more connections in university life. Practicing Locking, distance running, swimming, and basketball keeps me active and helps me find balance."
     ]
   },
   "news": [
@@ -31,63 +31,18 @@ const siteData = {
       "date": "2025.11",
       "zh": "获清华大学综合优秀奖学金和清华之友—张明为奖学金",
       "en": "Received the Tsinghua University Comprehensive Excellence Scholarship and the Friends of Tsinghua—Zhang Mingwei Scholarship."
+    }
+  ],
+  "archive": [
+    {
+      "date": "2026 年寒假",
+      "zh": "“皋情远至”情系母校支队获参与奖",
+      "en": "Our high-school outreach team received a Participation Award."
     },
     {
       "date": "2025—2026",
       "zh": "获评清华大学优秀学生科协骨干",
       "en": "Recognized as an Outstanding Student Leader in Tsinghua University's Student Science Associations for 2025–2026."
-    }
-  ],
-  "archive": [
-    {
-      "date": "2026.09—2026.10",
-      "zh": "小车电子技术课程设计项目",
-      "en": "Worked on the robot-car project for Project of Electronic Circuits"
-    },
-    {
-      "date": "2026.09—今",
-      "zh": "担任新雅 44 班班长",
-      "en": "Began serving as class monitor of Xinya Class 44"
-    },
-    {
-      "date": "2026 年暑假",
-      "zh": "担任赴安徽金寨乡村振兴实践支队宣传组骨干，负责摄影、视频与风物相册",
-      "en": "Documented rural revitalization fieldwork in Jinzhai, Anhui through photography, video and an album"
-    },
-    {
-      "date": "2026.06",
-      "zh": "自动化系科协硬件部骨干任期结束；2025.06—2026.06 志愿服务累计 92 小时",
-      "en": "Completed my term in the Hardware Division; accumulated 92 volunteer hours over June 2025–June 2026"
-    },
-    {
-      "date": "2026.02—2026.06",
-      "zh": "Yanshee 机器人开发及障碍赛课程项目",
-      "en": "Developed a Yanshee robot obstacle-course project"
-    },
-    {
-      "date": "2026 年寒假",
-      "zh": "第二年担任“皋情远至”情系母校支队队长，支队获参与奖",
-      "en": "Led the high-school outreach team for a second winter; the team received a Participation Award"
-    },
-    {
-      "date": "2026",
-      "zh": "“马约翰杯”乙组男子 100 米蛙泳第 18 名",
-      "en": "Placed 18th in the Group B men's 100 m breaststroke at the Ma John Cup"
-    },
-    {
-      "date": "2026",
-      "zh": "参加“肆不可挡”四系联合运动会；所在队获“两人三足”项目冠军",
-      "en": "Took part in a four-department sports meet; our team won the three-legged race"
-    },
-    {
-      "date": "2025.12",
-      "zh": "新雅书院科协惊鸿部部长任期结束",
-      "en": "Completed my term as head of the Jinghong Division of Xinya's Student Science Association"
-    },
-    {
-      "date": "2025.12",
-      "zh": "完成“乐云具身 SparkEdu 训练营清华大学站”",
-      "en": "Completed the LeYun Embodied Intelligence SparkEdu training camp at Tsinghua"
     },
     {
       "date": "2025.11",
@@ -95,64 +50,14 @@ const siteData = {
       "en": "AscenDog placed second in the Tsinghua special competition of the Ascend AI Innovation Competition"
     },
     {
-      "date": "2025.10—2026.01",
-      "zh": "参与双臂机器人桌面整理项目，负责数据采集 pipeline",
-      "en": "Worked on dual-arm tabletop tidying and the robot data collection pipeline"
-    },
-    {
-      "date": "2025.09—2026.09",
-      "zh": "担任自 43 班宣传委员，创办“四三帧”栏目",
-      "en": "Served as publicity representative of Automation Class 43 and launched Sisan Frames"
-    },
-    {
-      "date": "2025.09—2026.09",
-      "zh": "担任新雅烘焙坊创始人兼骨干",
-      "en": "Founded Xinya Baking Club and contributed to its activities and publicity"
-    },
-    {
-      "date": "2025.09",
-      "zh": "俄罗斯实践活动获中国日报网报道",
-      "en": "Our cultural exchange activities in Russia were covered on China Daily's website"
-    },
-    {
-      "date": "2025.08—2025.11",
-      "zh": "参与 AscenDog 智能导览机器狗项目",
-      "en": "Worked on the AscenDog intelligent robot-dog guide project"
-    },
-    {
-      "date": "2025.07",
-      "zh": "随“莫彼晤斯”支队赴俄罗斯实践，参与组织文化体验活动",
-      "en": "Joined overseas fieldwork in Russia and helped organize cultural activities"
-    },
-    {
-      "date": "2025 年暑假",
-      "zh": "参加 iCenter 新疆和田实践，参与支教、植树、调研与成果汇报",
-      "en": "Joined iCenter fieldwork in Hotan, Xinjiang"
-    },
-    {
-      "date": "2025.06—2026.06",
-      "zh": "担任自动化系科协硬件部骨干",
-      "en": "Served as a core member of the Hardware Division of Automation's Student Science Association"
-    },
-    {
       "date": "2025.05",
       "zh": "第四届机器狗开发大赛一等奖（第二名）",
       "en": "Won First Prize, placing second, in the Fourth Robot Dog Development Competition"
     },
     {
-      "date": "2025.02—2025.06",
-      "zh": "担任清华 DK5 街舞社 Locking 队队长",
-      "en": "Served as captain of the Locking team in Tsinghua's DK5 Street Dance Club"
-    },
-    {
       "date": "2025 年寒假",
-      "zh": "首次担任“皋情远至”情系母校支队队长，支队获优秀奖",
-      "en": "Led the high-school outreach team; the team received an Excellence Award"
-    },
-    {
-      "date": "2024.10—2025.12",
-      "zh": "担任新雅书院科协惊鸿部部长",
-      "en": "Served as head of the Jinghong Division of Xinya's Student Science Association"
+      "zh": "“皋情远至”情系母校支队获优秀奖",
+      "en": "Our high-school outreach team received an Excellence Award."
     },
     {
       "date": "2024.09",
@@ -329,6 +234,11 @@ const siteData = {
       "date": "2025—2026",
       "zh": "清华大学优秀学生科协骨干",
       "en": "Outstanding Student Leader, Student Science Associations, Tsinghua University, 2025–2026"
+    },
+    {
+      "date": "2025 年寒假",
+      "zh": "“皋情远至”情系母校实践支队优秀奖",
+      "en": "Excellence Award, Gaoqing Yuanzhi High-School Outreach Team"
     }
   ],
   "service": {
@@ -405,7 +315,7 @@ const siteData = {
             "获评 2025—2026“清华大学优秀学生科协骨干”，对应上述任职经历。"
           ],
           "en": [
-            "Designed five questionnaires, organized survey data and helped plan seven Stella Talks and six Hehe academic salons. Spoke at the 13th Stella Club session about choosing a major and studying Automation. Received recognition as an outstanding student science-association leader for 2025–2026 based on this service."
+            "Designed five questionnaires, organized survey data and helped plan seven Stella Talks and six Hehe academic salons. Spoke at the [13th Stella Club session](https://mp.weixin.qq.com/s/aco1YaZlznvJJ7PsrvFu8Q) about choosing a major and studying Automation. Received recognition as an outstanding student science-association leader for 2025–2026 based on this service."
           ]
         }
       },
@@ -536,6 +446,12 @@ const siteData = {
     "stella": "https://mp.weixin.qq.com/s/aco1YaZlznvJJ7PsrvFu8Q",
     "classPost": "https://mp.weixin.qq.com/s/QWOxY68zEQy3T-jxx5Z0tA",
     "jinzhai": "https://mp.weixin.qq.com/s/m3yr8BFT585W30OcJOLjVw"
+  },
+  "research": {
+    "gaze": {
+      "en": "Cross-view 3D Gaze Target Estimation",
+      "zh": "跨视角三维注视目标估计"
+    }
   }
 };
 if (typeof module !== "undefined") module.exports = siteData;

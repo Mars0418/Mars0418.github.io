@@ -1,7 +1,7 @@
 /* Shared by the static build and the browser language switch. */
 const text = {
   en: {
-    nav: ['About Me', 'News', 'Research', 'Projects', 'Education', 'Awards', 'Service'],
+    nav: ['About Me', 'News', 'Research', 'Selected Projects', 'Education', 'Awards', 'Service'],
     role: 'Undergraduate in Automation', college: 'Xinya College', university: 'Tsinghua University',
     location: 'Beijing, China', more: 'Show more', less: 'Show less', archive: 'More updates',
     interests: 'Research interests', equal: 'Equal contribution', corresponding: 'Corresponding author',
@@ -22,7 +22,7 @@ const text = {
     footer: 'Last updated October 2026', top: 'Back to top',
   },
   zh: {
-    nav: ['关于我', '近期动态', '研究', '课程项目', '教育背景', '个人荣誉', '学生工作与实践'],
+    nav: ['关于我', '近期动态', '研究', '精选项目', '教育背景', '个人荣誉', '学生工作与实践'],
     role: '自动化专业本科生', college: '新雅书院', university: '清华大学',
     location: '中国 · 北京', more: '展开更多', less: '收起', archive: '更多动态',
     interests: '研究兴趣', equal: '共同第一作者', corresponding: '通讯作者',
@@ -49,7 +49,7 @@ const external = (url, label, cls = '') => `<a class="${cls}" href="${esc(url)}"
 const icons = {
   mail: '<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 6 9 7 9-7"/></svg>',
   github: '<svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12 .75a11.25 11.25 0 0 0-3.56 21.92c.56.1.77-.24.77-.54v-2.1c-3.14.68-3.8-1.33-3.8-1.33-.52-1.3-1.26-1.65-1.26-1.65-1.03-.7.08-.69.08-.69 1.14.08 1.73 1.17 1.73 1.17 1.01 1.73 2.65 1.23 3.3.94.1-.73.4-1.23.72-1.51-2.51-.29-5.15-1.26-5.15-5.59 0-1.24.44-2.25 1.17-3.04-.12-.29-.5-1.44.11-3 0 0 .95-.3 3.09 1.16a10.74 10.74 0 0 1 5.62 0c2.14-1.46 3.08-1.16 3.08-1.16.62 1.56.23 2.71.12 3a4.37 4.37 0 0 1 1.16 3.04c0 4.34-2.64 5.29-5.16 5.58.4.35.77 1.04.77 2.09v3.1c0 .3.2.65.78.54A11.25 11.25 0 0 0 12 .75Z"/></svg>',
-  scholar: '<svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14ZM12 0 0 9.5l4.838 3.94A8.001 8.001 0 0 1 12 9a8.001 8.001 0 0 1 7.162 4.44L24 9.5Z"/></svg>',
+  scholar: '<svg class="scholar-icon" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="m12 3 11 4-11 4L1 7l11-4Zm-7 7 7 2.6 7-2.6 1 7c-4.7 3.3-11.3 3.3-16 0l1-7Z"/><path d="M3 8v8" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="m3 14-1.5 6h3L3 14Z"/></svg>',
 };
 function iconLink(url, type, label, newTab = true) {
   return `<a class="icon-button" href="${esc(url)}" aria-label="${esc(label)}" title="${esc(label)}"${newTab ? ' target="_blank" rel="noopener noreferrer"' : ''}>${icons[type]}</a>`;
@@ -70,9 +70,7 @@ function renderSidebar(lang) {
     <h1>${lang === 'en' ? 'Zhenghan Zhu' : '朱正涵'}</h1>
     <p class="other-name">${lang === 'en' ? '朱正涵' : 'Zhenghan Zhu'}</p>
     <p class="affiliation">${t.role}<br>${t.college}, ${t.university}</p>
-    <p class="location">${t.location}</p>
     <div class="profile-links">${iconLink('mailto:zhuzh24@mails.tsinghua.edu.cn', 'mail', 'Email: zhuzh24@mails.tsinghua.edu.cn', false)}${iconLink('https://github.com/Mars0418', 'github', 'GitHub')}${iconLink('https://scholar.google.com/citations?user=Pjnm7e4AAAAJ&hl=en', 'scholar', 'Google Scholar')}<a class="cv-button" href="assets/Zhenghan-Zhu-CV.pdf" title="${lang === 'en' ? 'Curriculum Vitae' : '个人简历'}" target="_blank" rel="noopener">${lang === 'en' ? 'CV' : '简历'}</a></div>
-    <p class="explore-label">${lang === 'en' ? 'EXPLORE' : '浏览栏目'}</p>
     <nav class="section-nav" aria-label="${lang === 'en' ? 'Sections' : '页面栏目'}">${ids.map((id, i) => `<a href="#${id}">${t.nav[i]}</a>`).join('')}</nav>`;
 }
 function renderMain(data, lang) {
@@ -81,17 +79,16 @@ function renderMain(data, lang) {
   const prefix = lang === 'en' ? 'My research interests include ' : '我的研究兴趣包括';
   const interest = about[1].replace(prefix, '').replace(/[。.]+$/, '');
   const newsItem = item => `<li><span class="date">${esc(dateLabel(item.date, lang))}</span><span>${markdown(item[lang])}</span></li>`;
-  const authors = data.authors.map(([name, slug, mark]) => `${external('https://openreview.net/profile?id=~' + slug, name === 'Zhenghan Zhu' ? `<strong>${name}</strong>` : name)}${mark ? `<sup>${mark}</sup>` : ''}`).join(', ');
+  const authors = data.authors.map(([name, slug]) => external('https://openreview.net/profile?id=~' + slug, name === 'Zhenghan Zhu' ? `<strong>${name}</strong>` : name)).join(', ');
   const serviceItem = (item, kind, index) => {
     let links = '';
-    if (kind === 'campus' && index === 3) links = external(data.links.stella, t.stella);
     if (kind === 'campus' && index === 4) links = external(data.links.classPost, t.classPost);
     if (kind === 'practice' && index === 0) links = `${external(data.links.chinaDaily, t.chinaDaily)} · ${external(data.links.topPost, t.topPost)}`;
     if (kind === 'practice' && index === 3) links = external(data.links.jinzhai, t.jinzhai);
     return `<article class="service-item"><div class="item-heading"><h4>${esc(item.title[lang])}</h4><span class="date">${esc(item.date[lang])}</span></div><ul>${item.body[lang].map(v => `<li>${markdown(v)}</li>`).join('')}</ul>${lang === 'en' && links ? `<p class="related-links">${links}</p>` : ''}</article>`;
   };
   return `<section aria-labelledby="about">${sectionHead('about', t.nav[0])}
-    <p>${esc(about[0])} ${esc(about[1])}</p><p class="beyond">${esc(about[2])}</p>
+    <p>${esc(about[0]).replace(lang === 'en' ? 'My research goal is to enable robots to truly interact with people' : '我的研究目标是让机器人真正实现与人的交互', phrase => `<strong>${phrase}</strong>`)} ${esc(about[1])}</p><p class="beyond">${esc(about[2])}</p>
   </section>
   <section aria-labelledby="news">${sectionHead('news', t.nav[1])}
     <ul class="timeline news-selected">${data.news.map(newsItem).join('')}</ul>
@@ -100,11 +97,12 @@ function renderMain(data, lang) {
   </section>
   <section aria-labelledby="research">${sectionHead('research', t.nav[2])}
     <article class="research-item"><h3>HEIR: Harness Egocentric Intent for Human-Robot Interactions</h3>
-      <p class="authors">${authors}</p><p class="author-notes"><sup>*</sup> ${t.equal} &nbsp; <sup>†</sup> ${t.corresponding}</p>
+      <p class="authors">${authors}</p>
       <p class="publication-status">${t.submitted} <span class="date">2026.09</span></p>
       <figure class="research-figure"><a href="assets/images/heir-teaser-original.png" data-lightbox aria-label="${t.enlarge}" target="_blank"><img src="assets/images/heir-teaser.webp" alt="${esc(t.caption)}" width="2400" height="1429" loading="lazy"></a><figcaption>${t.caption} <a href="assets/images/heir-teaser-original.png" data-lightbox>${t.enlarge} ↗</a></figcaption></figure>
       <p>${t.heir}</p><div class="resource-links">${external(data.links.project, 'Project', 'resource-link')}${external(data.links.dataset, 'Dataset', 'resource-link')}</div>
     </article>
+    <article class="research-item gaze-research"><h3>${esc(data.research.gaze[lang])}</h3></article>
   </section>
   <section aria-labelledby="projects">${sectionHead('projects', t.nav[3])}
     <article class="project-item"><a class="project-image" href="assets/images/robot-car-slide3.webp" data-lightbox aria-label="${esc(t.carTitle)}"><img src="assets/images/robot-car-slide3.webp" alt="${esc(t.carAlt)}" width="1920" height="1080" loading="lazy"></a><div><h3>${t.carTitle}</h3><p class="date">2026.09–2026.10</p><p>${t.car}</p>${external(data.links.car, 'GitHub ↗', 'project-code')}</div></article>
@@ -117,7 +115,7 @@ function renderMain(data, lang) {
     <details class="coursework"><summary>${t.courses}</summary><table><thead><tr><th scope="col">${t.courseName}</th><th scope="col">${t.grade}</th></tr></thead><tbody>${data.courses.map(c => `<tr><td>${esc(c[lang])}</td><td>${esc(c.grade)}</td></tr>`).join('')}</tbody></table></details>
   </section>
   <section aria-labelledby="awards">${sectionHead('awards', t.nav[5])}<ul class="timeline awards-list">${data.awards.map(newsItem).join('')}</ul></section>
-  <section aria-labelledby="service">${sectionHead('service', t.nav[6])}<h3 class="subsection-title">${t.campus}</h3>${data.service.campus.map((item, i) => serviceItem(item, 'campus', i)).join('')}<h3 class="subsection-title practice-heading">${t.practice}</h3>${data.service.practice.map((item, i) => serviceItem(item, 'practice', i)).join('')}<p class="volunteer-hours">${t.hours}</p></section>
+  <section aria-labelledby="service">${sectionHead('service', t.nav[6])}<h3 class="subsection-title">${t.campus}</h3>${data.service.campus.map((item, i) => serviceItem(item, 'campus', i)).join('')}<h3 class="subsection-title practice-heading">${t.practice}</h3>${data.service.practice.map((item, i) => serviceItem(item, 'practice', i)).join('')}</section>
   <footer><span>${t.footer}</span><a href="#about">${t.top} ↑</a></footer>`;
 }
 if (typeof module !== 'undefined') module.exports = {renderMain, renderSidebar, text, ids};
