@@ -237,13 +237,13 @@ html[lang='zh-CN'] .beyond { line-height: 1.95; }
 .profile { overflow: hidden; padding-bottom: 0; }
 .portrait-link { width: clamp(82px, 13vh, 140px); }
 .portrait { width: 100%; height: clamp(96px, 15vh, 160px); }
-.profile h1 { margin-top: 12px; }
-.profile .other-name { margin-bottom: 10px; }
+.profile h1 { margin-top: 12px; font-weight: 700; }
+.profile .other-name { margin-bottom: 10px; font-weight: 700; }
 .profile-links { margin-top: 10px; }
 .section-nav { margin-top: 20px; gap: 5px; }
 .section-nav a { padding: 7px 13px; }
 .gaze-research { margin-top: 30px; padding-top: 23px; border-top: 1px solid var(--line); }
-.scholar-icon { color: #80babe; }
+.scholar-icon { color: var(--accent); }
 @media (max-height: 700px) {
   .profile { top: 35px; bottom: 14px; }
   .profile h1 { margin-top: 9px; }

@@ -22,7 +22,7 @@ const text = {
     footer: 'Last updated October 2026', top: 'Back to top',
   },
   zh: {
-    nav: ['关于我', '近期动态', '研究', '精选项目', '教育背景', '个人荣誉', '学生工作与实践'],
+    nav: ['关于我', '近期动态', '研究项目', '精选项目', '教育背景', '个人荣誉', '学生工作与实践'],
     role: '自动化专业本科生', college: '新雅书院', university: '清华大学',
     location: '中国 · 北京', more: '展开更多', less: '收起', archive: '更多动态',
     interests: '研究兴趣', equal: '共同第一作者', corresponding: '通讯作者',
