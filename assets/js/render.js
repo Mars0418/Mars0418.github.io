@@ -1,7 +1,7 @@
 /* Shared by the static build and the browser language switch. */
 const text = {
   en: {
-    nav: ['About Me', 'News', 'Research', 'Selected Projects', 'Education', 'Awards', 'Service'],
+    nav: ['About Me', 'News', 'Research', 'Engineering Projects', 'Education', 'Awards', 'Service'],
     role: 'Undergraduate in Automation', college: 'Xinya College', university: 'Tsinghua University',
     location: 'Beijing, China', more: 'Show more', less: 'Show less', archive: 'More updates',
     interests: 'Research interests', equal: 'Equal contribution', corresponding: 'Corresponding author',
@@ -22,7 +22,7 @@ const text = {
     footer: 'Last updated October 2026', top: 'Back to top',
   },
   zh: {
-    nav: ['关于我', '近期动态', '研究项目', '精选项目', '教育背景', '个人荣誉', '学生工作与实践'],
+    nav: ['关于我', '近期动态', '研究项目', '工程项目', '教育背景', '个人荣誉', '学生工作与实践'],
     role: '自动化专业本科生', college: '新雅书院', university: '清华大学',
     location: '中国 · 北京', more: '展开更多', less: '收起', archive: '更多动态',
     interests: '研究兴趣', equal: '共同第一作者', corresponding: '通讯作者',
