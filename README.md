@@ -8,7 +8,7 @@ About Me → News → Research → Selected Projects → Education → Awards �
 
 - English / Chinese switch with a remembered preference.
 - Expandable News archive and selected coursework.
-- HEIR research figure with an enlarged preview, author links, Project and Dataset links; a Cross-view 3D Gaze Target Estimation research entry.
+- HEIR research figure with an enlarged preview, author links, Project and Dataset links; a SCOPE co-first-author research entry with the full paper title and summary.
 - Two course projects: robot-car control and Yanshee obstacle-course development.
 - Responsive layout and a static fallback for reduced motion.
 - A fixed left profile and section navigation, with only the main content moving during page scrolling. Compact windows keep the same two-column arrangement.
@@ -43,3 +43,5 @@ GitHub Pages serves the root of `main`. `.nojekyll` keeps the site independent o
 Visual direction: [Minimal Light](https://github.com/yaoyao-liu/minimal-light). Content organization: [Yitang Li](https://liyitang22.github.io/) and [Yifan Chen](https://cyf-24.github.io/). The implementation is custom HTML, CSS and JavaScript.
 
 Personal photos, paper figures and project materials retain their respective authorship. The Yanshee source code is maintained separately in [yanshee-obstacle-course](https://github.com/Mars0418/yanshee-obstacle-course).
+
+Content updated on November 18, 2026: 2025–2026 scholarships, SCOPE research, and the downloadable CV. SCOPE is listed as submitted to CVPR 2027. The seven-author list, equal contribution of the first three authors, and corresponding authorship of Miao Liu are confirmed by the author.

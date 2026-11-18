@@ -13,6 +13,16 @@ const siteData = {
   },
   "news": [
     {
+      "date": "2026.11",
+      "zh": "作为共同第一作者（排名第一）完成的 SCOPE 论文已投稿 CVPR 2027",
+      "en": "Our SCOPE paper, on which I am a co-first author (listed first), has been submitted to CVPR 2027."
+    },
+    {
+      "date": "2026",
+      "zh": "获2025—2026学年清华大学综合优秀奖学金兼好读书奖学金",
+      "en": "Received the Tsinghua University Comprehensive Excellence Scholarship and Haodushu (Love of Reading) Scholarship for 2025–2026."
+    },
+    {
       "date": "2026.09",
       "zh": "作为共同第一作者参与的 HEIR 论文已顺利投稿 ICLR 2027",
       "en": "Our HEIR paper, on which I am a co-first author, has been submitted to ICLR 2027."
@@ -21,7 +31,9 @@ const siteData = {
       "date": "2026.01",
       "zh": "在 2025 RoboMind 冬令营“抓取类—整理桌面”赛道获得第三名",
       "en": "Our team placed third in the tabletop tidying track of the 2025 RoboMind Winter Camp."
-    },
+    }
+  ],
+  "archive": [
     {
       "date": "2025.11",
       "zh": "AscenDog 项目获清华大学自动化系紫冬学生因材施教计划特等奖",
@@ -31,9 +43,7 @@ const siteData = {
       "date": "2025.11",
       "zh": "获清华大学综合优秀奖学金和清华之友—张明为奖学金",
       "en": "Received the Tsinghua University Comprehensive Excellence Scholarship and the Friends of Tsinghua—Zhang Mingwei Scholarship."
-    }
-  ],
-  "archive": [
+    },
     {
       "date": "2026 年寒假",
       "zh": "“皋情远至”情系母校支队获参与奖",
@@ -200,6 +210,11 @@ const siteData = {
     }
   ],
   "awards": [
+    {
+      "date": "2026",
+      "zh": "清华大学综合优秀奖学金兼好读书奖学金（2025—2026 学年）",
+      "en": "Tsinghua University Comprehensive Excellence Scholarship and Haodushu (Love of Reading) Scholarship, 2025–2026"
+    },
     {
       "date": "2026.01",
       "zh": "2025 RoboMind 冬令营“抓取类—整理桌面”赛道第三名",
@@ -449,8 +464,46 @@ const siteData = {
   },
   "research": {
     "gaze": {
-      "en": "Cross-view 3D Gaze Target Estimation",
-      "zh": "跨视角三维注视目标估计"
+      "zh": "Beyond the Eye of the Beholder: Scene Context and Geometric Priors for 3D Gaze Target Estimation",
+      "en": "Beyond the Eye of the Beholder: Scene Context and Geometric Priors for 3D Gaze Target Estimation",
+      "role": {
+        "zh": "已投稿 CVPR 2027 · 共同第一作者（排名第一）",
+        "en": "Submitted to CVPR 2027 · Co-first author (listed first)"
+      },
+      "summary": {
+        "zh": "SCOPE 将单视角与多视角三维注视目标估计统一为场景表面候选点选择，融合场景上下文与几何先验，定位具体的三维注视目标点。模型在冻结骨干网络的基础上训练约 120 万参数，并在 MVGT、EgoBody-10、GFIE 及跨数据集评测中验证。",
+        "en": "SCOPE unifies single- and multi-view 3D gaze target estimation as selection among scene-surface candidates, combining scene context and geometric priors to localize a 3D target point. It trains 1.2M parameters on frozen backbones and is evaluated on MVGT, EgoBody-10, GFIE, and cross-dataset transfer."
+      },
+      "authors": [
+        [
+          "Zhenghan Zhu",
+          "*"
+        ],
+        [
+          "Yichi Zhang",
+          "*"
+        ],
+        [
+          "Bo Wang",
+          "*"
+        ],
+        [
+          "Siqi Wu",
+          ""
+        ],
+        [
+          "Shuhua Zhang",
+          ""
+        ],
+        [
+          "Sen Cui",
+          ""
+        ],
+        [
+          "Miao Liu",
+          "†"
+        ]
+      ]
     }
   }
 };

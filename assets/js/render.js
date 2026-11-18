@@ -19,7 +19,7 @@ const text = {
     hours: '92 hours of volunteer service, June 2025–June 2026.',
     stella: 'Stella Club talk', classPost: 'Class stories',
     chinaDaily: 'China Daily coverage', topPost: 'Selected profile article', jinzhai: 'Jinzhai fieldwork video',
-    footer: 'Last updated October 2026', top: 'Back to top',
+    footer: 'Last updated November 2026', top: 'Back to top',
   },
   zh: {
     nav: ['关于我', '近期动态', '研究项目', '工程项目', '教育背景', '个人荣誉', '学生工作与实践'],
@@ -40,7 +40,7 @@ const text = {
     hours: '2025.06—2026.06 累计志愿服务 92 小时。',
     stella: 'Stella Club 分享', classPost: '四三帧栏目',
     chinaDaily: '中国日报报道', topPost: '十佳推送相关文章', jinzhai: '金寨实践视频',
-    footer: '更新于 2026 年 10 月', top: '返回顶部',
+    footer: '更新于 2026 年 11 月', top: '返回顶部',
   },
 };
 const ids = ['about', 'news', 'research', 'projects', 'education', 'awards', 'service'];
@@ -102,7 +102,7 @@ function renderMain(data, lang) {
       <figure class="research-figure"><a href="assets/images/heir-teaser-original.png" data-lightbox aria-label="${t.enlarge}" target="_blank"><img src="assets/images/heir-teaser.webp" alt="${esc(t.caption)}" width="2400" height="1429" loading="lazy"></a><figcaption>${t.caption} <a href="assets/images/heir-teaser-original.png" data-lightbox>${t.enlarge} ↗</a></figcaption></figure>
       <p>${t.heir}</p><div class="resource-links">${external(data.links.project, 'Project', 'resource-link')}${external(data.links.dataset, 'Dataset', 'resource-link')}</div>
     </article>
-    <article class="research-item gaze-research"><h3>${esc(data.research.gaze[lang])}</h3></article>
+    <article class="research-item gaze-research"><h3>${esc(data.research.gaze[lang])}</h3><p class="authors">${data.research.gaze.authors.map(([name, mark]) => `${name === 'Zhenghan Zhu' ? `<strong>${esc(name)}</strong>` : esc(name)}${mark ? `<sup>${esc(mark)}</sup>` : ''}`).join(', ')}</p><p class="author-note">* ${t.equal} · † ${t.corresponding}</p><p class="publication-status">${esc(data.research.gaze.role[lang])}</p><p>${esc(data.research.gaze.summary[lang])}</p></article>
   </section>
   <section aria-labelledby="projects">${sectionHead('projects', t.nav[3])}
     <article class="project-item"><a class="project-image" href="assets/images/robot-car-slide3.webp" data-lightbox aria-label="${esc(t.carTitle)}"><img src="assets/images/robot-car-slide3.webp" alt="${esc(t.carAlt)}" width="1920" height="1080" loading="lazy"></a><div><h3>${t.carTitle}</h3><p class="date">2026.09–2026.10</p><p>${t.car}</p>${external(data.links.car, 'GitHub ↗', 'project-code')}</div></article>
