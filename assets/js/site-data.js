@@ -14,8 +14,8 @@ const siteData = {
   "news": [
     {
       "date": "2026.11",
-      "zh": "作为共同第一作者（排名第一）完成的 SCOPE 论文已投稿 CVPR 2027",
-      "en": "Our SCOPE paper, on which I am a co-first author (listed first), has been submitted to CVPR 2027."
+      "zh": "作为第一作者完成的 SCOPE 论文已投稿 CVPR 2027",
+      "en": "Our SCOPE paper, on which I am the first author, has been submitted to CVPR 2027."
     },
     {
       "date": "2026",
@@ -24,8 +24,8 @@ const siteData = {
     },
     {
       "date": "2026.09",
-      "zh": "作为共同第一作者参与的 HEIR 论文已顺利投稿 ICLR 2027",
-      "en": "Our HEIR paper, on which I am a co-first author, has been submitted to ICLR 2027."
+      "zh": "作为共同第一作者参与的 HEIR 论文已转投 CVPR 2027",
+      "en": "Our HEIR paper, on which I am a co-first author, has been transferred to CVPR 2027."
     },
     {
       "date": "2026.01",
@@ -467,8 +467,8 @@ const siteData = {
       "zh": "Beyond the Eye of the Beholder: Scene Context and Geometric Priors for 3D Gaze Target Estimation",
       "en": "Beyond the Eye of the Beholder: Scene Context and Geometric Priors for 3D Gaze Target Estimation",
       "role": {
-        "zh": "已投稿 CVPR 2027 · 共同第一作者（排名第一）",
-        "en": "Submitted to CVPR 2027 · Co-first author (listed first)"
+        "zh": "已投稿 CVPR 2027 · 第一作者",
+        "en": "Submitted to CVPR 2027 · First author"
       },
       "summary": {
         "zh": "SCOPE 将单视角与多视角三维注视目标估计统一为场景表面候选点选择，融合场景上下文与几何先验，定位具体的三维注视目标点。模型在冻结骨干网络的基础上训练约 120 万参数，并在 MVGT、EgoBody-10、GFIE 及跨数据集评测中验证。",
