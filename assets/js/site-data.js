@@ -503,7 +503,11 @@ const siteData = {
           "Miao Liu",
           "†"
         ]
-      ]
+      ],
+      "figures": {
+        "pipeline": "assets/images/scope/pipeline.png",
+        "qualitative": "assets/images/scope/qualitative.png"
+      }
     }
   }
 };

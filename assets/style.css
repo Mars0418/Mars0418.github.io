@@ -266,3 +266,23 @@ html[lang='zh-CN'] .beyond { line-height: 1.95; }
   .section-nav { margin-top: 8px; gap: 3px; }
   .section-nav a { padding-top: 3px; padding-bottom: 3px; }
 }
+
+.scope-figures { display: grid; grid-template-columns: 1fr; gap: 18px; margin-top: 22px; }
+.scope-figure { min-width: 0; }
+.scope-figure a { display: block; cursor: zoom-in; }
+.scope-figure img { width: 100%; max-height: 520px; object-fit: contain; object-position: left center; border-radius: 3px; background: var(--soft); }
+.scope-figure:first-child img { max-height: 430px; }
+.scope-figure figcaption { margin-top: 6px; }
+.gaze-research { margin-top: 0; padding-top: 0; border-top: 0; }
+.heir-research { margin-top: 39px; padding-top: 30px; border-top: 1px solid var(--line); }
+@media (min-width: 900px) {
+  .portrait-link { width: clamp(156px, 15vh, 184px); }
+  .portrait { height: clamp(178px, 18vh, 210px); }
+  .profile h1 { font-size: 29px; margin-top: 18px; }
+  .profile .other-name { font-size: 15px; margin-bottom: 15px; }
+  .profile .affiliation { font-size: 13px; line-height: 1.75; }
+  .profile-links { margin-top: 14px; }
+}
+@media (max-width: 760px) {
+  .heir-research { margin-top: 29px; padding-top: 22px; }
+}

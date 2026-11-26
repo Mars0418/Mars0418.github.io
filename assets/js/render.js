@@ -96,13 +96,14 @@ function renderMain(data, lang) {
     <button class="text-button" id="news-toggle" type="button" aria-expanded="false" aria-controls="news-archive">${t.more} <span aria-hidden="true">↓</span></button>
   </section>
   <section aria-labelledby="research">${sectionHead('research', t.nav[2])}
-    <article class="research-item"><h3>HEIR: Harness Egocentric Intent for Human-Robot Interactions</h3>
+    <article class="research-item gaze-research"><h3>${esc(data.research.gaze[lang])}</h3><p class="authors">${data.research.gaze.authors.map(([name]) => `${name === 'Zhenghan Zhu' ? `<strong>${esc(name)}</strong>` : esc(name)}`).join(', ')}</p><p class="publication-status">${esc(data.research.gaze.role[lang])}</p><p>${esc(data.research.gaze.summary[lang])}</p><div class="scope-figures"><figure class="scope-figure"><a href="${data.research.gaze.figures.pipeline}" data-lightbox aria-label="SCOPE pipeline"><img src="${data.research.gaze.figures.pipeline}" alt="SCOPE pipeline: gaze-guided surface candidates, multi-view feature fusion, contextual interaction and decoding" loading="lazy"></a><figcaption>SCOPE pipeline</figcaption></figure><figure class="scope-figure"><a href="${data.research.gaze.figures.qualitative}" data-lightbox aria-label="SCOPE qualitative results"><img src="${data.research.gaze.figures.qualitative}" alt="SCOPE qualitative results" loading="lazy"></a><figcaption>Qualitative results</figcaption></figure></div></article>
+    <article class="research-item heir-research"><h3>HEIR: Harness Egocentric Intent for Human-Robot Interactions</h3>
       <p class="authors">${authors}</p>
       <p class="publication-status">${t.submitted} <span class="date">2026.09</span></p>
       <figure class="research-figure"><a href="assets/images/heir-teaser-original.png" data-lightbox aria-label="${t.enlarge}" target="_blank"><img src="assets/images/heir-teaser.webp" alt="${esc(t.caption)}" width="2400" height="1429" loading="lazy"></a><figcaption>${t.caption} <a href="assets/images/heir-teaser-original.png" data-lightbox>${t.enlarge} ↗</a></figcaption></figure>
       <p>${t.heir}</p><div class="resource-links">${external(data.links.project, 'Project', 'resource-link')}${external(data.links.dataset, 'Dataset', 'resource-link')}</div>
     </article>
-    <article class="research-item gaze-research"><h3>${esc(data.research.gaze[lang])}</h3><p class="authors">${data.research.gaze.authors.map(([name, mark]) => `${name === 'Zhenghan Zhu' ? `<strong>${esc(name)}</strong>` : esc(name)}${mark ? `<sup>${esc(mark)}</sup>` : ''}`).join(', ')}</p><p class="author-note">* ${t.equal} · † ${t.corresponding}</p><p class="publication-status">${esc(data.research.gaze.role[lang])}</p><p>${esc(data.research.gaze.summary[lang])}</p></article>
+
   </section>
   <section aria-labelledby="projects">${sectionHead('projects', t.nav[3])}
     <article class="project-item"><a class="project-image" href="assets/images/robot-car-slide3.webp" data-lightbox aria-label="${esc(t.carTitle)}"><img src="assets/images/robot-car-slide3.webp" alt="${esc(t.carAlt)}" width="1920" height="1080" loading="lazy"></a><div><h3>${t.carTitle}</h3><p class="date">2026.09–2026.10</p><p>${t.car}</p>${external(data.links.car, 'GitHub ↗', 'project-code')}</div></article>
