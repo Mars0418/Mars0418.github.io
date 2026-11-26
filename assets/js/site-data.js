@@ -24,8 +24,8 @@ const siteData = {
     },
     {
       "date": "2026.09",
-      "zh": "作为共同第一作者参与的 HEIR 论文已转投 CVPR 2027",
-      "en": "Our HEIR paper, on which I am a co-first author, has been transferred to CVPR 2027."
+      "zh": "作为共同第一作者参与的 HEIR 论文已投稿 CVPR 2027",
+      "en": "Our HEIR paper, on which I am a co-first author, has been submitted to CVPR 2027."
     },
     {
       "date": "2026.01",

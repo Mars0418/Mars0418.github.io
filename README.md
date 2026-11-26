@@ -44,4 +44,4 @@ Visual direction: [Minimal Light](https://github.com/yaoyao-liu/minimal-light). 
 
 Personal photos, paper figures and project materials retain their respective authorship. The Yanshee source code is maintained separately in [yanshee-obstacle-course](https://github.com/Mars0418/yanshee-obstacle-course).
 
-Content updated on November 18, 2026: 2025–2026 scholarships, SCOPE research, and the downloadable CV. SCOPE is listed as submitted to CVPR 2027; HEIR is listed as transferred to CVPR 2027. The seven-author list, equal contribution of the first three authors, and corresponding authorship of Miao Liu are confirmed by the author.
+Content updated on November 18, 2026: 2025–2026 scholarships, SCOPE research, and the downloadable CV. SCOPE is listed as submitted to CVPR 2027; HEIR is listed as submitted to CVPR 2027. The seven-author list, equal contribution of the first three authors, and corresponding authorship of Miao Liu are confirmed by the author.
